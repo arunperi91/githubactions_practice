@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Setup Java JDK
         uses: actions/setup-java@v3.14.1
-          with:
-            java-version: matrix.java-version  
+        with:
+          java-version: matrix.java-version  
     
     
