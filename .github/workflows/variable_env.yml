@@ -14,8 +14,7 @@ jobs:
     steps:
       - name: Print
         run: echo '${{env.MY_VAR}}'
-        env: 
-          MY_VAR: steps
+        
       
 
 
