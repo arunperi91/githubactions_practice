@@ -6,16 +6,16 @@ on:
 jobs:
   matrix-jobs:
     runs-on: ${{matrix.os}}
-      strategy:
-        matrix:
-          os:
-            - ubuntu-latest
-            - windows-latest
-          java-version: [17,20]
-      steps:
-        - name: Setup Java JDK
-          uses: actions/setup-java@v3.14.1
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+        java-version: [17,20]
+    steps:
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.14.1
           with:
-            java-version: matrix.java-version
+            java-version: matrix.java-version  
     
     
